@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi - Randhika Commerce</title>
+    <link rel="stylesheet" href="transaksi.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="MAIN.html" class="logo">Randhika Commerce</a>
+            <nav>
+                <a href="main.html">Home</a>
+                <a href="produk.html">Produk</a>
+                <a href="tentang.html">Tentang</a>
+                <a href="kontak.html">Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Formulir Transaksi</h1>
+            <form action="invoice.html" method="get">
+                <input name="cek" value="cek" style="visibility: 0; opacity: 0;"/>
+                <div class="form-group">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Alamat:</label>
+                    <textarea id="alamat" name="alamat" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telepon">Telepon:</label>
+                    <input type="tel" id="telepon" name="telepon">
+                </div>
+                <div class="form-group">
+                    <label for="produk">Produk:</label>
+                    <select id="produk" name="produk">
+                        <option value="1">Vest Pria - Rp100.000</option>
+                        <option value="2">Iphone 15 Pro Max - Rp200.000</option>
+                        <option value="3">Sneaker Putih - Rp300.000</option>
+                        <option value="4">Keyboard- Rp400.000</option>
+                        <option value="5">Korean Dress - Rp500.000</option>
+                        <option value="6">Loosing Pants - Rp600.000</option>
+                        <option value="7">Headset Gaming - Rp900.000</option>
+                    </select>
+                </div>
+               
+                <button type="submit">Kirim</button>
+             
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Randhika Commerce. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

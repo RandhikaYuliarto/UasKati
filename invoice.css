@@ -1,0 +1,36 @@
+/* ... (gaya sebelumnya) ... */
+
+.invoice-container {
+    text-align: center; /* Pusatkan konten secara horizontal */
+}
+
+.invoice-container header {
+    background-color: #8bb4f3;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.invoice-container .logo img {
+    max-width: 150px; /* Sesuaikan ukuran logo */
+    margin-bottom: 10px;
+}
+
+.invoice-details {
+    display: flex; /* Gunakan flexbox untuk tata letak */
+    justify-content: space-around; /* Jarak yang sama antara section */
+    margin-top: 30px;
+}
+
+.section {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Section mengambil ruang yang tersedia secara merata */
+    margin: 0 10px; /* Jarak antara section */
+}
+
+.thank-you {
+    margin-top: 30px;
+}
