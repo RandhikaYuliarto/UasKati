@@ -8,49 +8,90 @@
     <header>
         <div class="container">
             <h1>Randhika E-commerce</h1>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Produk</a>
-                <a href="#">Tentang</a>
-                <a href="#">Kontak</a>
-            </nav>
         </div>
     </header>
 
     <main>
+
+        <button id="toggleBtn">☰</button>
+        <div id="sidebar">
+          <a href="index.html">Home</a>
+          <a href="profile.html">Profile</a>
+          <a href="transaksi.html">Belanja</a>
+        </div>
+        
+
         <section class="hero">
             <h2>Selamat datang di Randhika Game Corner!</h2>
         </section>
 
         <section class="product-list">
-            <h2>Daftar Produk</h2>
-            <div class="products">
-                <div class="product">
-                    <img src="gambar/keyboard.jpg" alt="Keyboard">
-                    <img src="gambar/keyboardd.jpeg" alt="Vest Pria">
-                    <img src="gambar/keyboarddd.jpeg" alt="Vest Pria">
-                    <h3>Mechanical Keyboard</h3>
-                    <p>A mechanical keyboard is a type of keyboard that uses mechanical switches instead of membrane switches</p>
-                    <p class="price">Rp 800.000</p>
-                    <a href="transaksi.html">
-                        <button class="buy-button">Beli</button>
-                    </a>
-                </div>
-                </div>
-                <div class="products">
-                    <div class="product">
-                        <img src="gambar/headset.jpeg" alt="Vest Pria">
-                        <img src="gambar/headsett.jpeg" alt="Vest Pria">
-                        <img src="gambar/headsettt.jpeg" alt="Vest Pria">
-                        <h3>Headset Gaming</h3>
-                        <p>High quality headset. sudah support Dolby Atmos dan 9D Audio 1000hz</p>
-                        <p class="price">Rp 560.000</p>
-                        <a href="transaksi.html">
-                            <button class="buy-button">Beli</button>
-                        </a>
-                    </div>
-                    </div>
+            <h2>Produk Sepatu</h2>
+            <div class="product-grid">
+              <div class="product">
+                <img src="gambar/nike.avif" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$10.00</p>
+                <button>Buy Now</button>
+              </div>
+              <div class="product">
+                <img src="gambar/nike2.avif" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$20.00</p>
+                <button>Buy Now</button>
+              </div>
+              <div class="product">
+                <img src="gambar/nike3.avif" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$30.00</p>
+                <button>Buy Now</button>
+              </div>
+            </div>
+          </section>
         </section>
+
+        <div class="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-comp active">
+                <img src="gambar/puma2.avif" alt="Boy">
+              </div>
+              <div class="carousel-comp">
+                <img src="gambar/pumagaya" alt="Kacamata">
+              </div>
+              <div class="carousel-comp">
+                <img src="gambar/nbgaya.avif" alt="Cloud Women">
+              </div>
+            </div>
+            <button class="carousel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carousel-control next" onclick="moveSlide(1)">&#10095;</button>
+          </div>
+
+          <section class="product-list">
+            <h2>Produk Kerja</h2>
+            <div class="product-grid">
+              <div class="product">
+                <img src="gambar/Iphone.jpeg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$10.00</p>
+                <button>Buy Now</button>
+              </div>
+              <div class="product">
+                <img src="gambar/keyboard.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$20.00</p>
+                <button>Buy Now</button>
+              </div>
+              <div class="product">
+                <img src="gambar/headsettt.jpeg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$30.00</p>
+                <button>Buy Now</button>
+              </div>
+            </div>
+          </section>
+        </section>
+
+
     </main>
 
     <footer>

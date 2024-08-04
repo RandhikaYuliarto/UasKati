@@ -1,3 +1,16 @@
+const toggleBtn = document.getElementById("toggleBtn");
+const sidebar = document.getElementById("sidebar");
+
+toggleBtn.addEventListener("click", function()   
+ {
+  if (sidebar.style.right === "-250px") {
+    sidebar.style.right = "0";
+  } else {
+    sidebar.style.right = "-250px";
+  }
+});
+
+
 const carouselItems = document.querySelector('.carousel-items');
 let currentItem = 0;
 const itemWidth = carouselItems.children[0].offsetWidth;
@@ -23,4 +36,19 @@ function slideCarousel() {
 }
 
 setInterval(slideCarousel, 3000); // Slide setiap 5 detik
+
+let currentSlide = 0;
+
+function moveSlide(direction) {
+  const slides = document.querySelectorAll('.carousel-comp');
+  const totalSlides = slides.length;
+
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+  slides[currentSlide].classList.add('active');
+
+  document.querySelector('.carousel-inner').style.transform = `translateX(-${currentSlide * 100}%)`;
+}
+
+
 
